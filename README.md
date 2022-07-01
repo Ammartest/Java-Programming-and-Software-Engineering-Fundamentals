@@ -1,5 +1,5 @@
 # Java Programming and Software Engineering Fundamentals Specialization
-- This repo contains all of my assignments from the Coursera Specialization: [Java Programming and Software Engineering Fundamentals Specialization](https://www.coursera.org/specializations/java-programming#courses)
+- This repo contains all of my assignments from the Coursera Specialization: [Java Programming and Software Engineering Fundamentals](https://www.coursera.org/specializations/java-programming#courses)
 
 ## Table of Content
 Course Week Assignments
