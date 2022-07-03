@@ -1,7 +1,9 @@
-# Java Programming and Software Engineering Fundamentals Specialization
-- This repo contains all of my assignments from the Coursera Specialization: [Java Programming and Software Engineering Fundamentals](https://www.coursera.org/specializations/java-programming#courses)
+# Programming Foundations with JavaScript, HTML and CSS
+
+- This directory contains all of my assignments from the Coursera Course: [Programming Foundations with JavaScript, HTML and CSS](https://www.coursera.org/learn/duke-programming-web?specialization=java-programming)
 
 ## Table of Content
+
 |Course                          |Week  	                |Assignments  	                  |
 |--------------------------------|--------------------------|---------------------------------|
 |1. Programming Foundations with |1. Designing a Web Page   |1. Using HTML - Formatting Text  |
