@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons with div practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <h1 id="myHeader">TO DO List</h1>
+    <!-- Add new item -->
+    <input type="button" id="addButton" value="Add" onclick="addTask()"></input>
+    <input type="text" id="input" placeholder="enter task ..."></input>
+    <hr>
+    <!-- Task list -->
+    <ul id="tasks">
+        <li>
+            <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+            <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+            <input type="button" class="important" onclick="important(this.parentNode)" value="!" />
+            make todo list
+        </li>
+    </ul>
+    <hr>
+    <!-- About and Buttons -->
+    <div id="divabout"></div>
+    <input type="button" onclick="doAbout()" value="About" />
+    <input type="button" onclick="clearAbout()" value="Clear" />
+</body>
