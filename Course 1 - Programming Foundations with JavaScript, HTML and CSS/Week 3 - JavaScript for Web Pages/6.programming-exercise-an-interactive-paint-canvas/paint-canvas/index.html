@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Painting Canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Page title -->
+    <h1>Paint Your Own Picture</h1>
+    <!-- Set canvas width + height -->
+    <p>
+        Set Width
+        <input type="text" onchange="setWidth(this.value)" />
+        Set Height
+        <input type=”text” onchange="setHeight(this.value)" />
+    </p>
+    <!-- Display canvas -->
+    <canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX, event.offsetY)"
+        onmouseup="endPaint()"></canvas>
+    <!-- Set brush color + size -->
+    <p>
+        Brush color
+        <input type="color" value="#000" onchange="changeColor(this.value)"/>
+        Brush size
+        <input type="range" id="sizeInput" min="1" max="50" value="50" oninput="resizeBrush(this.value)"/>
+        <output id="sizeOutput">50</output>
+    </p>
+    <!-- Clear canvas -->
+    <p>
+        <input type="button" id="clear" value="Clear Canvas" onclick="clearCanvas()"/>
+    </p>
+    <!-- Include the script after the whole HTML page has been rendered -->
+    <script src="script.js"></script>
+</body>
