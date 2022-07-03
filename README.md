@@ -19,9 +19,9 @@
 |  	                             |3. JavaScript for         |1. try-it-buttons-with-divs                      |
 |                                |   Web Pages  	        |2. try-it-change-pages-interactively             |
 |                                |                          |3. programming-exercise-todo-list                |
-|                                |                          |4.try-it-canvas                                  |
-|                                |                          |5.try-it-inputs-and-events                       |
-|                                |                          |                                                 |
+|                                |                          |4. try-it-canvas                                 |
+|                                |                          |5. try-it-inputs-and-events                      |
+|                                |                          |6.                                               |
 |                                |                          |                                                 |
 |  	                             |4. MiniProject: Image     |1. Review of HTML, CSS,                          |
 |                                |   Filters on the Web  	|  	and JavaScript                                |
