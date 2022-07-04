@@ -6,7 +6,7 @@ Write a function named `phrase3words` that puts three words together into a phra
 The code below has been started for you. It defines the function `phrase3words` and calls the function three times, printing the answer each time. You need to replace `[code here]` with the missing code.
 
 ### CODE:
-```
+```javascript
 function phrase3words(value1, value2, value3) {
     var answer = [code here] ;  
     return answer;
@@ -35,7 +35,7 @@ For example, the call reformatName("Susan", "Rodger") returns the string "Rodger
 The function has been started below for you, with the body of the code missing.
 
 ### CODE:
-```
+```javascript
 function reformatName(first, last) {
     // missing code
 }
@@ -60,7 +60,7 @@ For example, the call numberPixels("chapel.png") returns 71148, and the call num
 The function has been started below for you. Note that you first need to create a SimpleImage from the filename. Then you can apply SimpleImage methods to the variable `someImg` such as `getHeight()` to get the number of pixels in the height of the image.
 
 ### CODE:
-```
+```javascript
 function numberPixels(namefile) {
     var someImg = new SimpleImage(namefile);
     var height = someImg.getHeight(); 
@@ -87,7 +87,7 @@ For example, the image "rodger.png" has 315 pixels in width and 424 pixels in he
 The function has been started below for you. 
 
 ### CODE:
-```
+```javascript
 function perimeter(imageName) {
     // missing code
 }
@@ -108,7 +108,7 @@ Note that in the image drewgreen.png, Drew is standing in the middle and the bac
 The function has been started below for you. 
 
 ### CODE:
-```
+```javascript
 function printPixel(nameImage, xpos, ypos) {
     // missing code
 }
@@ -135,10 +135,10 @@ Consider the image drewgreen.png.  The pixel at location (250,500) has red compo
 The function has been started below for you. 
 
 ### CODE:
-```
-function sumPixel(nameOfImage, xpos, ypos) ;
+```javascript
+function sumPixel(nameOfImage, xpos, ypos) {
     // missing code
-}
+};
 
 var answer = sumPixel("drewgreen.png", 250, 500);
 print(answer);

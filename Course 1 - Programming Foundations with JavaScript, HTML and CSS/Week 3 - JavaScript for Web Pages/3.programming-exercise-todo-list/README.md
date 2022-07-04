@@ -16,7 +16,7 @@ Or copy the parts from below into a new pen on CodePen to get started. Put the H
 
 ## Complete the Steps:
 1. In the HTML part under `STEPs 1 and 2 below here`  add an <input> tag with attribute type=”button”. Include attributes id=”addButton” and value=”Add”. This input will be an Add button clicked by a mouse so you will also need to include an attribute onclick=”addTask()”, where addTask() is a function we have already started for you. Note that all these attributes must be inside the input tag, such as:
-   ```
+   ```html
    <input  type=”button” …    >
    ```
    You will see the add button appear. You can click it but nothing should happen yet.
@@ -73,7 +73,7 @@ Or copy the parts from below into a new pen on CodePen to get started. Put the H
 7. When you click on the red X, the todo item is deleted. Let’s change that so an item has to be checked off before it can be removed from the list.
 
     Here are the functions called in processing items. When you click on the red X the remove function is called.  When you click on the check mark the markDone() function is called. Both functions are in the javaScript part of CodePen. They look like this:
-    ```
+    ```javascript
     function markDone (item) {
         item.className = 'finished';
     }
@@ -122,7 +122,7 @@ Or copy the parts from below into a new pen on CodePen to get started. Put the H
 
 You already know how lists work in HTML. You use `<ol>` or `<ul>` tags and for individual items in the list you use the `<li>` and `</li>`. In the code we gave you we already started an unordered list with two buttons, one a check mark ( `value="&#x2713;"` ) and one an X mark ( `value="&#x2713;"` ) and that said make todo list. That HTML code is here:
 
-```
+```html
 <ul id="tasks">
    <li>
        <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
@@ -134,7 +134,7 @@ You already know how lists work in HTML. You use `<ol>` or `<ul>` tags and for i
 
 In the JavaScript function addTask(), it has to recreate this `<li>` item that has two buttons and a phrase. That is done by making a huge string in single quotes (since we use some double quotes in that string). Here is that function (without your additions):
 
-```
+```javascript
 function addTask () {
     var input = document.getElementById("input");
     // get current text from input field
@@ -178,7 +178,7 @@ Add an important button to each list item so you can mark which items should hav
     <img src="./pic16.png" width=200>
 
 3. In the JavaScript, write a new function named important that has one parameter nameditem. You can start with:
-    ```
+    ```javascript
     // highlight item from document
     function important (item) {
 

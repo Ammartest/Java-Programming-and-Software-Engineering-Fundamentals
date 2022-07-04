@@ -16,7 +16,7 @@ This starter code is NOT complete and may show an error saying `TypeError: the p
 
 
 ### Here is the JavaScript Starter:
-```
+```javascript
 var paintcanvas = document.getElementById("canvas1");
 var context = paintcanvas.getContext("2d");
 var color = 'black';
@@ -70,7 +70,7 @@ You are also given three complete functions and one empty function
 2. Let’s put a border around the canvas so we can see it. In the CSS part:
     
     Define a canvas style rule that defines the canvas border as 1px and a grayish color:
-    ```
+    ```css
     canvas {
         MISSING LINE HERE
     }
@@ -106,7 +106,7 @@ You are also given three complete functions and one empty function
 
 6. Now add mouse control to the canvas so you can paint. In the HTML window inside the `<canvas  >` tag add the following:
     - a. Add _onmousedown_ attribute to start painting when you click the mouse by giving it the value to call the `startPaint()` function. That is, you should add this attribute inside the `<canvas>` tag already there, right after the id attribute so it looks like: 
-    ```
+    ```html
     <canvas id="canvas1" onmousedown="startPaint()" >
     ```
     - b. Add _onmousemove_ attribute so painting continues as the mouse moves. It should have the value of calling the `doPaint()` function and pass the two arguments _event.offsetX_ and _event.offsetY_ which are the current position of the mouse within the canvas no matter where it is positioned on the web page. This should also be inside the same `<canvas>` tag.
@@ -148,7 +148,7 @@ You are also given three complete functions and one empty function
 
 9. Let's add an output to show the value of the slider.
     - a. Right after the end of the tag `<input />` from the last step and still in `<p> </p>`, add an `<output>` start and end tag around the number 50, and inside the `<output >` tag set the id to “sizeOutput”. It should look like the following:
-      ```
+      ```html
       <output id="sizeOutput">50</output>
       ```
     - b. Now move the slider and you should see the value change, getting smaller as you move the slider to the left and larger as you move the slider to the right.

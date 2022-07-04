@@ -4,7 +4,7 @@ Try experimenting a little with the DukeLearnToProgram (DLTP) JavaScript program
 
 ## Experimenting with Variables and Creating a SimpleImage
 Try the example you saw in the `Variables` video of creating and initializing three variables: 
-```
+```javascript
 var x = 3;
 var y = 4;
 var z = x + 2*y;
@@ -12,7 +12,7 @@ var z = x + 2*y;
 Add code to print out x, y, and z and note their values.
 
 Next, if you wrote the following code, what do you think would be the values of x and y printed? Try it and see!  
-```
+```javascript
 var x = 3;
 var y = 2;
 y = x;
@@ -20,7 +20,7 @@ print (x);
 print (y);
 ```
 Next, create and print a new SimpleImage from one of the images in the environment, for example:
-```
+```javascript
 var image = new SimpleImage(“chapel.png”);
 ```
 Note that there are many different images available in the DLTP JavaScript programming environment in the “Available Images” area. You can drag and drop other images from your computer into the “Available Images” area and create a SimpleImage by just replacing “chapel.png” with whichever file name that shows up in “Available Images”.
@@ -36,14 +36,14 @@ For example, you may want to print the width and height of your image, and print
 
 ## Experimenting with Functions
 Write the function you saw in the `Functions` video:
-```
+```javascript
 function square(x){
 	var ans = x*x;
 	return ans;
 }
 ```
 Also write the following line of code you saw in the `Functions` video that calls the square function on the value 4 and stores the result in the variable y:
-```
+```javascript
 var y = square(4);
 ```
 Print out y. Call the square function on a few numbers other than 4. 

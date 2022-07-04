@@ -9,7 +9,7 @@ Write code that starts with the image “chapel.png” shown below on the left a
 The code below has been started for you. It creates the variable image of type SimpleImage from the image file  chapel.png. It then loops over all the pixels making the red component as large as possible. Then it prints the resulting image. You need to replace the comment // missing code with the missing code.
 
 ### CODE:
-```
+```javascript
 var image = new SimpleImage("chapel.png");
 
 // missing code
@@ -29,7 +29,7 @@ Write code that starts with the image “chapel.png” shown below on the left a
 The code below has been started for you. It creates the variable image of type SimpleImage from the image file  chapel.png. It then loops over all the pixels removing all the red from the image. Then it prints the resulting image. You need to replace the comment // missing code with the missing code.
 
 ### CODE:
-```
+```javascript
 var image = new SimpleImage("chapel.png");
 
 // missing code
@@ -49,7 +49,7 @@ The code below has been started for you. It creates the variable image of type S
 // missing code with the missing code.
 
 ### CODE:
-```
+```javascript
 var image = new SimpleImage("eastereggs.jpg");
 
 // missing code
@@ -69,7 +69,7 @@ Write code that starts with the image “astrachan.jpg” shown below on the lef
 The code below has been started for you. It creates the variable image of type SimpleImage from the image file  astrachan.jpg. It then loops over all the pixels replacing only the pixels in the bottom ten rows with black pixels. Then it prints the resulting image. You need to replace the comment // missing code with the missing code.
 
 ### CODE:
-```
+```javascript
 var image = new SimpleImage("astrachan.jpg");
 
 // missing code
@@ -89,7 +89,7 @@ Write code that starts with the image “chapel.png” shown below on the left, 
 The code below has been started for you. It creates the variable image of type SimpleImage from the image file  chapel.png. It then loops over all the pixels replacing only the pixels in the top left corner of size 50 by 50 with all green. Then it prints the resulting image. You need to replace the comment // missing code with the missing code.
 
 ### CODE:
-```
+```javascript
 var image = new SimpleImage("chapel.jpg");
 
 // missing code
@@ -119,7 +119,7 @@ where picture2 is the simpleImage on the left below, followed by print(result2) 
 The code below has been started for you. It defines the function `topRightCorner`, creates a new SimpleImage and passes the SimpleImage to topRightCorner, which returns the image modified. It then creates another SimpleImage and passes it in another call to topRightCorner. You need to replace the comment // missing code  with the missing code.
 
 ### CODE:
-```
+```javascript
 function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
 
     // missing code
@@ -149,7 +149,7 @@ Here are more details. When one loops over pixels with a for loop, they are proc
 The function `changeRed` has two parameters named `width` and `height` for the width and height of the rectangle. This function returns the newly created image. The function has been started below. You need to replace the comment // missing code  with the missing code.
 
 ### CODE:
-```
+```javascript
 function changeRed(width, height) {
     var picture = new SimpleImage(width, height);
     var red = 0;

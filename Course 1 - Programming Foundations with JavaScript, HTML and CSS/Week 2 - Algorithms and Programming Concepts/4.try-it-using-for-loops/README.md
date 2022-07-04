@@ -12,7 +12,7 @@ Think through the steps you will need to do to solve this problem. You will need
    - Make the pixel yellow.
 
 You can use the following line of code to create an image that is 2 pixels wide and 2 pixels high. This image will be all black. How would you create an image that is 200 pixels wide and 200 pixels high? Try it and see if you were correct!
-```
+```javascript
 var img = new SimpleImage(2,2);
 print(img);
 ```

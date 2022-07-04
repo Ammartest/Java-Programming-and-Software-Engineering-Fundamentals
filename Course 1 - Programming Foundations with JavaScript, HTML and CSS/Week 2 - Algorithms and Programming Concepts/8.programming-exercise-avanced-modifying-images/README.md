@@ -13,7 +13,7 @@ Your friend has written code to try to solve this problem, however their code ha
 <img src="./pt2-wrong-output.png">
 
 Here is their code: 
-```
+```javascript
 var img = new SimpleImage(200,200);
 for (var px of img.values()){
   var x = px.getX();
