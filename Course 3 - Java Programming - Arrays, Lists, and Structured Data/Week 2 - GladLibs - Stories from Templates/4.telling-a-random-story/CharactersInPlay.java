@@ -72,8 +72,8 @@ public class CharactersInPlay {
         //for (int k = 0; k < characterNames.size(); k++) {
         //    System.out.println(characterNames.get(k) + "\t" + counts.get(k));
         //}
-        String mainCharacter = findMainCharacters();
+        //String mainCharacter = findMainCharacters();
         //System.out.println("The character with the most speaking parts: " + mainCharacter);
-        charactersWithNumParts(10,15);
+        charactersWithNumParts(0,99);
     }
 }

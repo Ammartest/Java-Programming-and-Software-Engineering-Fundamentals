@@ -54,7 +54,8 @@ public class WordFrequenciesMap {
     
     public void tester(){
         //String filename = "data/kjv10.txt";
-        String filename = "confucius.txt";
+        //String filename = "confucius.txt";
+        String filename = "errors.txt";
         double start = System.currentTimeMillis();
         countWords(filename);
         double end = System.currentTimeMillis();
