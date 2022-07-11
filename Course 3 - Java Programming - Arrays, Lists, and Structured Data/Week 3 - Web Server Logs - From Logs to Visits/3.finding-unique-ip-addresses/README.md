@@ -1,12 +1,11 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+# Programming Exercise: Finding Unique IP Addresses
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+## Assignment: Unique IPs
+In this assignment you will continue to build on the __LogEntry__ and __LogAnalyzer__ classes, which you learned about in the last lesson. You will continue to use the method __parseEntry__ from the __WebLogParser__ class, and you should not modify this class. You will write several methods to solve problems about web logs. 
+
+Specifically, you should do the following:
+- In the __LogAnalyzer__ class, write the method __countUniqueIPs__ that has no parameters. This method should return an integer representing the number of unique IP addresses. It should also assume that the instance variable __records__ already has its ArrayList of Strings read in from a file, and should access __records__ in computing this value. For help, refer to the lectures in this lesson on the unique IP algorithm and code.
+- In the __Tester__ class (or you can write a new class for testing) write the void method __testUniqueIP__ that has no parameters. This method should create a LogAnalyzer, read from the file __short-test_log__, and then test the method __countUniqueIPs__. 
+- In the LogAnalyzer class, write the void method __printAllHigherThanNum__ that has one integer parameter __num__. This method should examine all the web log entries in records and print those LogEntrys that have a status code greater than __num__. Be sure to add code in the __Tester__ class to test out this method with the file __short-test_log__.
+- In the __LogAnalyzer__ class, write the method __uniqueIPVisitsOnDay__ that has one String parameter named __someday__ in the format “MMM DD” where MMM is the first three characters of the month name with the first letter capitalized and the others in lowercase, and DD is the day in two digits (examples are “Dec 05” and “Apr 22”). This method accesses the web logs in __records__ and returns an ArrayList of Strings of unique IP addresses that had access on the given day. (Note that the dates in LogEntrys are stored as a Date object, but using __toString__ will allow you to access the characters in the Date. For example, consider that __d__ is a Date. __String str = d.toString();__ allows you to now use a String representation of the date.) Be sure to test your program with code in the __Tester__ class.  Using the file __weblog-short_log__ you should see that the call to __uniqueIPVisitsOnDay(“Sep 14”)__ returns an ArrayList of 2 items and __uniqueIPVisitsOnDay(“Sep 30”)__ returns an ArrayList of 3 items. 
+- In the __LogAnalyzer__ class, write the method __countUniqueIPsInRange__ that has two integer parameters named __low__ and __high__. This method returns the number of unique IP addresses in __record__ that have a status code in the range from __low__ to __high__, inclusive. Be sure to test your program on several ranges. For example, using the file __short-test_log__, the call __countUniqueIPsInRange(200,299)__ returns 4, as there are four unique IP addresses that have a status code from 200 to 299. The call __countUniqueIPsInRange(300,399)__ returns 2. In this case, note that there are three entries in the file that have a status code in the 300 range, but two of them have the same IP address.
