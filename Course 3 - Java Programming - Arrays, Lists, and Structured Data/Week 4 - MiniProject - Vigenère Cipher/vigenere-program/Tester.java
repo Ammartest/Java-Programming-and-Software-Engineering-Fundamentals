@@ -58,6 +58,7 @@ public class Tester {
     public void testVigenereBreaker() {
         //FileResource fr = new FileResource("./VigenereTestData/athens_keyflute.txt");
         FileResource fr = new FileResource("./messages/secretmessage1.txt");
+        //FileResource fr = new FileResource("./messages/secretmessage2.txt");
         String message = fr.asString();
         VigenereBreaker vigenereBreaker = new VigenereBreaker();
         int[] key = vigenereBreaker.tryKeyLength(message, 4, 'e');
