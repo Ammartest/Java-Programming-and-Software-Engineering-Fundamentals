@@ -17,7 +17,7 @@ public class LargestQuakes {
         //System.out.println("earthquake with the largest magnitude: " + list.get(largestIndex));
        
         System.out.println("earthquakes of largest magnitude:");
-        ArrayList<QuakeEntry> largest = getLargest(list, 5);
+        ArrayList<QuakeEntry> largest = getLargest(list, 50);
         for (QuakeEntry qe : largest) {
             System.out.println(qe);
         }

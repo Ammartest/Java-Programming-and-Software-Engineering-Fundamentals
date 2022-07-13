@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Filter
+comment0.text=\n\ Write\ a\ description\ of\ interface\ Filter\ here.\n\ \n\ @author\ Ginny\ Dang\n\ @version\ July\ 13rd,\ 2022\n
+comment1.params=qe
+comment1.target=boolean\ satisfies(QuakeEntry)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+numComments=3
