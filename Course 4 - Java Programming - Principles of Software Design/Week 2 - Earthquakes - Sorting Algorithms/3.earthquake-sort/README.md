@@ -89,7 +89,7 @@ Specifically, for this assignment, you will modify the QuakeSortInPlace class:
   (-23.27, -67.66), mag = 4.80, depth = -175320.00, title = 69km SE of San Pedro de Atacama, Chile
   ```
 
-# Assignment 3: Check for Completion
+## Assignment 3: Check for Completion
 For this assignment, we will explore the idea that the data might be sorted before all the passes are complete. We want to write a method to determine whether a list is already sorted and then use that method to end our sorting algorithms early if earthquakes are sorted early.
 
 Specifically, for this assignment, you will modify the __QuakeSortInPlace__ class:
