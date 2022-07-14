@@ -38,7 +38,7 @@ Specifically, for this assignment, you will:
   (38.27, 142.53), mag = 4.60, depth = -30500.00, title = 109km E of Ishinomaki, Japan
   ```
 
-Assignment 2: MatchAllFilter and Modification to the Interface
+## Assignment 2: MatchAllFilter and Modification to the Interface
 
 In this assignment you will write a class named __MatchAllFilter__ that can store and apply many filters, and you will also modify the __Filter__ interface to store the name of the filter. 
 - Write the class __MatchAllFilter__ that implements __Filter__. This class has a private ArrayList of Filters that is created in the constructor that has no parameters. This class has two methods, 1) a void method named __addFilter__ with one Filter parameter that adds the Filter to its private ArrayList, and 2) a method named __satisfies__ that has one QuakeEntry parameter and returns true if the QuakeEntry satisfies all the filter conditions, otherwise it returns false. 
