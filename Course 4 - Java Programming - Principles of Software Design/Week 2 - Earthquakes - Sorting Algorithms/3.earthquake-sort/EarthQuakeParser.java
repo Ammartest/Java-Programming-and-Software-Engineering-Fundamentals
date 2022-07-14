@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -20,26 +19,20 @@ public class EarthQuakeParser {
 
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
-
             //Document document = builder.parse(new File(source));
             //Document document = builder.parse("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom");
             Document document = null;
-
-            if (source.startsWith("http")){
+            if (source.startsWith("http")) {
                 document = builder.parse(source);
             }
             else {
                 document = builder.parse(new File(source));
             }
             //Document document = builder.parse("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom");
-
             NodeList nodeList = document.getDocumentElement().getChildNodes();
-
             ArrayList<QuakeEntry> list = new ArrayList<QuakeEntry>();
-
-            for(int k=0; k < nodeList.getLength(); k++){
+            for(int k = 0; k < nodeList.getLength(); k++) {
                 Node node = nodeList.item(k);
-
                 if (node.getNodeName().equals("entry")) {
                     Element elem = (Element) node;
                     NodeList t1 = elem.getElementsByTagName("georss:point");
@@ -48,18 +41,16 @@ public class EarthQuakeParser {
                     double lat = 0.0, lon = 0.0, depth = 0.0;
                     String title = "NO INFORMATION";
                     double mag = 0.0;
-
                     if (t1 != null) {
                         String s2 = t1.item(0).getChildNodes().item(0).getNodeValue();
-                        //System.out.print("point2: "+s2);
+                        //System.out.print("point2: " + s2);
                         String[] args = s2.split(" ");
                         lat = Double.parseDouble(args[0]);
                         lon = Double.parseDouble(args[1]);
                     }
                     if (t2 != null){
                         String s2 = t2.item(0).getChildNodes().item(0).getNodeValue();
-
-                        String mags = s2.substring(2,s2.indexOf(" ",2));
+                        String mags = s2.substring(2, s2.indexOf(" ", 2));
                         if (mags.contains("?")) {
                             mag = 0.0;
                             System.err.println("unknown magnitude in data");
@@ -68,21 +59,20 @@ public class EarthQuakeParser {
                             mag = Double.parseDouble(mags);
                             //System.out.println("mag= "+mag);
                         }
-                        int sp = s2.indexOf(" ",5);
-                        title = s2.substring(sp+1);
+                        int sp = s2.indexOf(" ", 5);
+                        title = s2.substring(sp + 1);
                         if (title.startsWith("-")){
                             int pos = title.indexOf(" ");
-                            title = title.substring(pos+1);
+                            title = title.substring(pos + 1);
                         }
                     }
                     if (t3 != null){
                         String s2 = t3.item(0).getChildNodes().item(0).getNodeValue();
                         depth = Double.parseDouble(s2);
                     }
-                    QuakeEntry loc = new QuakeEntry(lat,lon,mag,title,depth);
+                    QuakeEntry loc = new QuakeEntry(lat, lon, mag, title, depth);
                     list.add(loc);
                 }
-
             }
             return list;
         }
@@ -108,8 +98,6 @@ public class EarthQuakeParser {
         for(QuakeEntry loc : list){
             System.out.println(loc);
         }
-        System.out.println("# quakes = "+list.size());
-
+        System.out.println("# quakes = " + list.size());
     }
-    
 }
