@@ -60,11 +60,6 @@ public class WordGram {
     }
     
     public int hashCode() {
-        WordGram myWordGram = new WordGram(myWords, 0, myWords.length);
-        String myString = "";
-        for (int k = 0; k < myWordGram.length(); k++) {
-            myString += myWordGram.wordAt(k);
-        }
-        return myString.hashCode();
+        return toString().hashCode();
     }
 }

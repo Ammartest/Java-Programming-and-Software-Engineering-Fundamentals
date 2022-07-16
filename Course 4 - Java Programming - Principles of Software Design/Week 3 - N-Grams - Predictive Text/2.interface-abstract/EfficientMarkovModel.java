@@ -55,7 +55,7 @@ public class EfficientMarkovModel extends AbstractMarkovModel {
         
         for (String key : myMap.keySet()) {
             ArrayList<String> follows = myMap.get(key);
-            System.out.println(key + " : " + follows);
+            //System.out.println(key + " : " + follows);
             int currSize = follows.size();
             if (currSize > largestSize) {
                 largestSize = currSize;

@@ -30,7 +30,9 @@ public class Tester {
         st = st.replace('\n', ' ');
         MarkovOne markov = new MarkovOne();
         markov.setTraining(st);
-        ArrayList<String> follows = markov.getFollows("th");
+        //ArrayList<String> follows = markov.getFollows("th");
+        //ArrayList<String> follows = markov.getFollows("o");
+        ArrayList<String> follows = markov.getFollows("he");
         for (String follow : follows) {
             System.out.print(follow + ",");
         }

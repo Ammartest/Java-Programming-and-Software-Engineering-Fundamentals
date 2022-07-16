@@ -64,8 +64,12 @@ public class MarkovRunnerWithInterface {
         int size = 50;
         */
         int n = 5;
-        int seed = 615;
-        int size = st.length();
+        //int n = 6;
+        //int seed = 615;
+        //int seed = 792;
+        int seed = 531;
+        //int size = st.length();
+        int size = 200;
         
         EfficientMarkovModel markov = new EfficientMarkovModel(n);
         markov.setTraining(st);

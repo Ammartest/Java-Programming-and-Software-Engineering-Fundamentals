@@ -14,11 +14,13 @@ public class MarkovRunner {
         String st = fr.asString();
         st = st.replace('\n', ' ');
         MarkovZero markov = new MarkovZero();
-        int seed = 88;
+        //int seed = 88;
+        int seed = 1024;
         markov.setRandom(seed);
         markov.setTraining(st);
         System.out.println("Seed=" + seed);
-        for(int k = 0; k < 3; k++){
+        for(int k = 0; k < 3; k++) {
+            //markov.setRandom(seed);
             String text = markov.getRandomText(500);
             printOut(text);
         }
@@ -30,7 +32,8 @@ public class MarkovRunner {
         st = st.replace('\n', ' ');
         //st = "this is a test yes this is a test.";
         MarkovOne markov = new MarkovOne();
-        int seed = 273;
+        //int seed = 273;
+        int seed = 365;
         markov.setRandom(seed);
         markov.setTraining(st);
         System.out.println("Seed=" + seed);
@@ -46,7 +49,8 @@ public class MarkovRunner {
         st = st.replace('\n', ' ');
         //st = "this is a test yes this is a test.";
         MarkovFour markov = new MarkovFour();
-        int seed = 371;
+        //int seed = 371;
+        int seed = 715;
         markov.setRandom(seed);
         markov.setTraining(st);
         System.out.println("Seed=" + seed);
@@ -61,9 +65,11 @@ public class MarkovRunner {
         String st = fr.asString();
         st = st.replace('\n', ' ');
         //st = "this is a test yes this is a test.";
-        int n = 8;
+        //int n = 8;
+        int n = 7;
         MarkovModel markov = new MarkovModel(n);
-        int seed = 365;
+        //int seed = 365;
+        int seed = 953;
         markov.setRandom(seed);
         markov.setTraining(st);
         System.out.println("Seed=" + seed + ", N=" + n);
