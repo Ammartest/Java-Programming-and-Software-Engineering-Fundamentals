@@ -176,7 +176,6 @@ public class FirstRatings {
             }
         }
         
-        
         // Print all raters
         System.out.println("Number of raters: " + raters.size());
         /*
@@ -243,5 +242,7 @@ public class FirstRatings {
         } else {
             System.out.println(movies.size() + " movies have been rated");
         }
+        
+        System.out.println("\n");
     }
 }
