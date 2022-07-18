@@ -35,7 +35,7 @@ public class FirstRatings {
     public ArrayList<Rater> loadRaters(String filename) {
         HashMap<String, ArrayList<Rating>> raterIds = new HashMap<String, ArrayList<Rating>>();
         ArrayList<Rater> raters = new ArrayList<Rater>();
-        FileResource fr = new FileResource(filename);
+        FileResource fr = new FileResource("data/" + filename);
         CSVParser parser = fr.getCSVParser();
         
         // Gather all rater ids and corresponding ratings from the dataset

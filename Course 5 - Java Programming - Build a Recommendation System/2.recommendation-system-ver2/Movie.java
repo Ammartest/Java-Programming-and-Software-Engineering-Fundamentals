@@ -2,7 +2,7 @@
  * The POJO class Movie stores the data about one movie.
  * 
  * @author Duke Software Team
- * @version July 17th, 2022
+ * @version July 18th, 2022
  */
 
 import java.util.ArrayList;

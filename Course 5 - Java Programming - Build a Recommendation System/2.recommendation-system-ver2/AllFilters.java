@@ -1,3 +1,10 @@
+/**
+ * The class MovieDatabase is an efficient way to get information about movies.
+ * 
+ * @author Duke Software Team
+ * @version July 18th, 2022
+ */
+
 import java.util.ArrayList;
 
 public class AllFilters implements Filter {
@@ -14,12 +21,10 @@ public class AllFilters implements Filter {
     @Override
     public boolean satisfies(String id) {
         for(Filter f : filters) {
-            if (! f.satisfies(id)) {
+            if (!f.satisfies(id)) {
                 return false;
             }
         }
-        
         return true;
     }
-
 }
