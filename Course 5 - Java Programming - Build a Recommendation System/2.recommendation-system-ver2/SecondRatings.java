@@ -2,7 +2,7 @@
  * The SecondRatings class does calculations focusing on computing averages on movie ratings.
  * 
  * @author Ginny Dang
- * @version July 17th, 2022
+ * @version July 18th, 2022
  */
 
 import java.util.*;

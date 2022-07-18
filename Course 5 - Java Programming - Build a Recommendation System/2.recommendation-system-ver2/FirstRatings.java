@@ -2,7 +2,7 @@
  * The FirstRatings class processes the movie and ratings data.
  * 
  * @author Ginny Dang
- * @version July 17th, 2022
+ * @version July 18th, 2022
  */
 
 import edu.duke.*;
@@ -54,7 +54,7 @@ public class FirstRatings {
         
         // Gather all raters from the hash map
         for (String raterId : raterIds.keySet()) {
-            Rater newRater = new Rater(raterId);
+            Rater newRater = new EfficientRater(raterId);
             ArrayList<Rating> ratings = raterIds.get(raterId);
             for (Rating r : ratings) {
                 String i = r.getItem();

@@ -2,7 +2,7 @@
  * The POJO class Rating stores the data about one rating of an item.
  * 
  * @author Duke Software Team
- * @version July 17th, 2022
+ * @version July 18th, 2022
  */
 
 // An immutable passive data object (PDO) to represent the rating data
@@ -11,8 +11,8 @@ public class Rating implements Comparable<Rating> {
     private double value;
 
     public Rating(String anItem, double aValue) {
-        item = anItem;
-        value = aValue;
+        item = anItem; // movie id
+        value = aValue; // value of the rating
     }
 
     // Returns item being rated

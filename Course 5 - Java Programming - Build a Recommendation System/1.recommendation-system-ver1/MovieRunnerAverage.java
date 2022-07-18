@@ -22,9 +22,9 @@ public class MovieRunnerAverage {
         
         // Print a list of movies and their average ratings
         //int minNumRatings = 3;
-        //int minNumRatings = 50;
+        int minNumRatings = 50;
         //int minNumRatings = 20;
-        int minNumRatings = 12;
+        //int minNumRatings = 12;
         //ArrayList<Rating> avgRatings = secondRatings.getAverageRatings(minNumRatings);
         ArrayList<Rating> avgRatings = secondRatings.getAverageRatings(minNumRatings);
         System.out.println("Number of movies that have " + minNumRatings + " or more ratings: " + avgRatings.size());

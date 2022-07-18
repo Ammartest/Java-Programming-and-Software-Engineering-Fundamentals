@@ -2,7 +2,7 @@
  * The MovieRunnerAverage class.
  * 
  * @author Ginny Dang
- * @version July 17th, 2022
+ * @version July 18th, 2022
  */
 
 import java.util.*;
