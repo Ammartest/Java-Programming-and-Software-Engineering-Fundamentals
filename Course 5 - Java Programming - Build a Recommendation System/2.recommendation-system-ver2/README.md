@@ -157,4 +157,4 @@ Then for each movie ID in the ArrayList movies, you’ll need to calculate its a
         Michael Mann
     ```
 
-### _(This version of the recommendation system is more effecient than the first one as it has the movie database optimized with a HashMap)_
+### _(This version of the recommendation system is more effecient than the first one as it has the movie database optimized with a HashMap and utilizes interface and filters)_
