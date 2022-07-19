@@ -11,7 +11,7 @@ public class Rating implements Comparable<Rating> {
     private double value;
 
     public Rating(String anItem, double aValue) {
-        item = anItem; // movie id
+        item = anItem; // movie id or rater id
         value = aValue; // value of the rating
     }
 
